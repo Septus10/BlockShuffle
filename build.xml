@@ -1,0 +1,10 @@
+<project name="BlockShuffle" default="Build" basedir=".">
+	<target name="Build" description="Builds the project and outputs a jar file">
+		<mkdir dir="target"/>
+		<jar destfile="target/${ant.project.name}.jar">
+			<fileset dir="bin"/>
+			<fileset file="resources/plugin.yml"/>
+			<fileset file="resources/config.yml"/>
+		</jar>
+	</target>
+</project>
