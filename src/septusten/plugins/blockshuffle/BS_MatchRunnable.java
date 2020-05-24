@@ -1,6 +1,5 @@
 package septusten.plugins.blockshuffle;
 
-import java.text.DecimalFormat;
 import java.util.Collection;
 
 import org.bukkit.Bukkit;
@@ -8,7 +7,6 @@ import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.block.BlockFace;
-import org.bukkit.potion.PotionEffectType;
 
 import net.md_5.bungee.api.ChatColor;
 
@@ -33,7 +31,7 @@ public class BS_MatchRunnable implements Runnable
 		// Go through all players
 		Collection<BS_MatchPlayer> activePlayers = MainGameReference.getActivePlayers();
 		int NumSearching = 0;
-		for (BS_MatchPlayer p : activePlayers) 
+		for (BS_MatchPlayer p : activePlayers)
 		{
 			if (p.m_FoundBlock || p.getTargetBlock() == null)
 			{

@@ -12,7 +12,6 @@ public class BS_Util
 	{
 		int Minutes = (int)(secondsLeft / 60.f);
 		float Seconds = secondsLeft - ((float)Minutes * 60.f);
-		DecimalFormat Formatter = new DecimalFormat("#.#");
 		String formattedSeconds = Formatter.format(Seconds);
 		
 		if (Minutes != 0 && Seconds != 0)
