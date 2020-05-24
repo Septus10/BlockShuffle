@@ -1,0 +1,11 @@
+main: septusten.plugins.blockshuffle.BS_Main
+name: BlockShuffle
+version: 0.1
+api-version: 1.15
+author: SeptusTen
+description: Block Shuffle minigame plugin
+commands:
+  blockshuffle:
+    description: Main blockshuffle command
+    usage: "Usage /<command> [start|stop|block|join|timeleft] [start:first-round-time] [start:min-round-time] [start:num_rounds]}"
+    description: "Start: Starts the match, Stop: Stops the match, Block: Tells you your current block, Join: To join the match"
