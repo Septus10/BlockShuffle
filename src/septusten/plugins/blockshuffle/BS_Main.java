@@ -85,6 +85,7 @@ public class BS_Main extends JavaPlugin
 				{
 					return false;
 				}
+				
 				if (args.length > 1)
 				{
 					m_FirstRoundTime = Float.parseFloat(args[1]);
@@ -110,6 +111,15 @@ public class BS_Main extends JavaPlugin
 				else
 				{
 					m_MaxRounds = getConfig().getInt("max-rounds");
+				}
+				
+				if (args.length > 4)
+				{
+					m_GracePeriod = Float.parseFloat(args[4]);
+				}
+				else 
+				{
+					m_GracePeriod = (float)getConfig().getDouble("grace-period");
 				}
 
 				float m_TimeDiff = m_FirstRoundTime - m_MinRoundTime;

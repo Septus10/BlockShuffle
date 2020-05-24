@@ -1,3 +1,7 @@
+first-round-time: 10.0
+min-round-time: 5.0
+max-rounds: 10
+grace-period: 5.0
 whitelisted-blocks:
 - ==: septusten.plugins.blockshuffle.BS_Block
   block: ACACIA_LOG
@@ -596,6 +600,3 @@ whitelisted-blocks:
 - ==: septusten.plugins.blockshuffle.BS_Block
   block: YELLOW_WOOL
   weight: 30
-first-round-time: 10.0
-min-round-time: 5.0
-max-rounds: 10
